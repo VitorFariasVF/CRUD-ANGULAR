@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesComponent implements OnInit {
 
-  courses: Course[] = []; //pode ser declarado dentro do constructor
+  courses: Course[] = [
+    { _id: '1', name: 'Angular', category: 'front-end'}
+  ]; //pode ser declarado dentro do constructor
   displayedColumns = ['name','category'];
 
   constructor() {
