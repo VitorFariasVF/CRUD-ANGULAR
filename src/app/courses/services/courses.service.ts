@@ -9,7 +9,8 @@ import { Course } from '../model/course';
 })
 export class CoursesService {
 
-  private readonly API = '/assets/courses.json';
+  //private readonly API = '/assets/courses.json';
+  private readonly API = '/assets/acourses.json'; //teste de conexao
 
   constructor(private HttpClient: HttpClient) { }
 
