@@ -18,7 +18,7 @@ export class CoursesService {
     return this.HttpClient.get<Course[]>(this.API)
     .pipe(
       first(),
-      delay(5000),
+      //delay(5000), //Delay de carregamento p/teste.
       tap(courses => console.log(courses))
     );
   }
